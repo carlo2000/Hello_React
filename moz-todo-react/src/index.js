@@ -3,22 +3,20 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
 import Interactuar from './components/Interactuar';
-import reportWebVitals from './reportWebVitals';
+
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 
 ReactDOM.createRoot(document.getElementById('GG')).render(
-  <React.StrictMode>
-    <Interactuar />
-  </React.StrictMode>
+  <Interactuar props = "CARLOS" />
 )
 root.render(
   <React.StrictMode>
-    <App />
+    <App subject = "REACT"/>
   </React.StrictMode>
 );
 
 // If you want to start measuring performance in your app, pass a function
 // to log results (for example: reportWebVitals(console.log))
 // or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals();
+

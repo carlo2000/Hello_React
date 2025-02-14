@@ -1,9 +1,11 @@
-import logo from './logo.svg';
+
+import React from 'react';
 import './App.css';
 
-function App() {
+function App(props) {
+  const accion =props.subject;
   return (
-    <h1>hola mundo</h1>
+    <h1>hola , {accion}</h1>
   );
 }
 
